@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+
+# Electron-builder output
+dist/
+build/
+
+# OS / editors
+.DS_Store
+*.swp
+.vscode/
+.idea/

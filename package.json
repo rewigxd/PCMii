@@ -1,0 +1,28 @@
+{
+  "name": "pcmii",
+  "version": "1.0.0",
+  "description": "Конфигуратор сборок ПК",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "rewig",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.rewig.pcmii",
+    "productName": "PCMii",
+    "files": [
+      "main.js",
+      "index.html"
+    ],
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility"
+    }
+  }
+}
